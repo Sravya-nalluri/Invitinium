@@ -4,4 +4,7 @@ export const templates = [
   { id: 'golden-celebration', name: 'Golden Celebration', category: 'Birthday', price: 'Starting at ₹299', tone: 'sun' },
   { id: 'little-bloom', name: 'Little Bloom', category: 'Baby Shower', price: 'Starting at ₹399', tone: 'sky' },
   { id: 'new-beginnings', name: 'New Beginnings', category: 'Housewarming', price: 'Starting at ₹299', tone: 'sage' },
+  { id: 'golden-celebration', name: 'Golden Celebration', category: 'Birthday',
+  price: 'Starting at ₹299', tone: 'sun',
+  video: '/videos/golden-celebration.mp4' },
 ]

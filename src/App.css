@@ -54,6 +54,13 @@ a.card:hover, .template-card:hover { transform: translateY(-6px); box-shadow: va
 .invite--mini { aspect-ratio: 4 / 3; padding: 12px; gap: 4px; }
 .invite--mini .invite__title, .invite--mini .invite__orn { display: none; }
 .invite--mini .invite__sub { font-size: 1.1rem; }
+.template-card__play { position: relative; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 14px; }
+.play-badge { position: absolute; inset: 0; margin: auto; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: rgba(27,42,73,.85); color: var(--cream); transition: transform .2s; }
+.template-card__play:hover .play-badge { transform: scale(1.1); }
+.video-modal { border: 0; padding: 0; border-radius: 20px; width: min(420px, 92vw); background: #000; overflow: visible; }
+.video-modal::backdrop { background: rgba(27,42,73,.7); }
+.video-modal video { display: block; width: 100%; max-height: 85vh; border-radius: 20px; }
+.video-modal__close { position: absolute; top: -14px; right: -14px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--cream); color: var(--navy); cursor: pointer; z-index: 1; }
 
 /* ---------- Navbar ---------- */
 .navbar { position: sticky; top: 0; z-index: 50; background: rgba(251, 246, 238, .85); backdrop-filter: blur(10px); transition: box-shadow .3s; }
